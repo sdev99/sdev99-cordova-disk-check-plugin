@@ -1,6 +1,6 @@
 # Disk Check Plugin
 
-This plugin allows to get information about disk check in Android / iOS / Windows 10 platforms.
+This plugin allows to get information about disk check in Android / iOS
 
 ## Installation
 
