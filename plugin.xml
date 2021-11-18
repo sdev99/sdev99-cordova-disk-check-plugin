@@ -1,0 +1,41 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<plugin xmlns="http://apache.org/cordova/ns/plugins/1.0"
+        xmlns:android="http://schemas.android.com/apk/res/android"
+        id="sdev99-cordova-disk-check-plugin"
+        version="1.0.2">
+    <name>DiskCheckPlugin</name>
+    <description>Disk Check</description>
+    <license>MIT</license>
+    <keywords>diskCheck</keywords>
+    <repo></repo>
+    <issue></issue>
+    <js-module src="diskCheck.js" name="DiskCheckPlugin">
+        <clobbers target="DiskCheckPlugin"/>
+    </js-module>
+
+    <!-- android -->
+    <platform name="android">
+        <config-file target="res/xml/config.xml" parent="/*">
+            <feature name="DiskCheckPlugin">
+                <param name="android-package" value="com.sdev99.cordova.diskCheck.DiskCheckPlugin"/>
+                <param name="onload" value="true"/>
+            </feature>
+        </config-file>
+        <source-file src="src/android/DiskCheckPlugin.java" target-dir="src/com/sdev99/cordova/diskCheck/"/>
+    </platform>
+
+	
+	
+    <!-- ios -->
+    <platform name="ios">
+        <config-file target="config.xml" parent="/*">
+            <feature name="DiskCheckPlugin">
+                <param name="ios-package" value="DiskCheckPlugin"/>
+                <param name="onload" value="true"/>
+            </feature>
+        </config-file>
+	<source-file src="src/ios/DiskCheckPlugin.h"/>
+        <source-file src="src/ios/DiskCheckPlugin.m"/>
+    </platform>
+</plugin>
+

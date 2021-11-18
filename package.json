@@ -1,0 +1,30 @@
+{
+  "name": "sdev99-cordova-disk-check-plugin",
+  "version": "1.0.0",
+  "contributors": [
+    "Sukhdev Patidar <sukhdev.patidar99@gmail.com>"
+  ],
+  "keywords": [
+    "ecosystem:cordova",
+    "cordova-android",
+    "cordova-ios"
+  ],
+  "description": "This plugin allows to get information about disk check in Android / iOS / Windows 10 platforms.",
+  "cordova": {
+    "id": "sdev99-cordova-disk-check-plugin",
+    "platforms": [
+      "android",
+      "ios"
+    ]
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/sdev99/sdev99-cordova-disk-check-plugin.git"
+  },
+  "author": "sdev99",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/sdev99/sdev99-cordova-disk-check-plugin/issues"
+  },
+  "homepage": "https://github.com/sdev99/sdev99-cordova-disk-check-plugin#readme"
+}
